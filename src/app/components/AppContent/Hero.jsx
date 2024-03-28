@@ -5,7 +5,11 @@ import HeroCarousel from './HeroCarousel';
 import '../../../css/hero.css';
 import ShoppingCartContext from '../ShoppingCartContext/ShoppingCartContext.mjs';
 
+import Image from 'next/image';
+
 const Hero = ({ productData }) => {
+  const nextMedia = `/media`;
+
   const { cartItem, handleCartItem, addTo, wishlistCount } =
     useContext(ShoppingCartContext);
 
@@ -38,17 +42,22 @@ const Hero = ({ productData }) => {
           </div>
           <div id="product-hero">
             <div className="main-img">
-              <img
-                src={`https://arrogant-bundle.onrender.com/${images[currentIndex]}`}
+              <Image
+                src={`${nextMedia}${images[currentIndex]}`}
+                alt="mario1"
+                width={500} //placeholder height n width
+                height={300}
                 className="main-carousel-img"
                 ref={imageRef}
               />
             </div>
             <div id="mini-product">
               <div className="thumbnail-ctn">
-                <img
-                  src={`https://arrogant-bundle.onrender.com/${thumbs}`}
+                <Image
+                  src={nextMedia + thumbs}
                   alt={title}
+                  width={500} //placeholder height n width
+                  height={300}
                   className="thumbnail"
                 />
               </div>
@@ -56,8 +65,11 @@ const Hero = ({ productData }) => {
               <div className="product-showcase">
                 <div className="logoPrice">
                   <div className="itemlogo-ctn">
-                    <img
-                      src={`https://arrogant-bundle.onrender.com${platforms[0].image_link}`}
+                    <Image
+                      src={nextMedia + platforms[0].image_link}
+                      alt={title}
+                      width={500} //placeholder height n width
+                      height={300}
                       className="itemlogo"
                     />
                   </div>
