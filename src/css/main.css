@@ -1,545 +1,549 @@
 @import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
 
-:root{
-    /* CSS HEX Humble Pallette
+:root {
+  /* CSS HEX Humble Pallette
     - use via: cssProperty: var(--jet)
     */
-    --apple-green: #8EA940ff;
-    --raisin-black: #252830ff;
-    --eerie-black: #191B19ff;
-    --jet: #2A2B29ff;
-    --offwhite: #f9f9f9;
-    --offgray: rgba(128, 128, 128, 0.32);
-    --french-gray: #d0d3d9;
-    --onyx: #363942ff;
-    --gold: #ef9943;
-    --darkTitle: #494f5c;
+  --apple-green: #8ea940ff;
+  --raisin-black: #252830ff;
+  --eerie-black: #191b19ff;
+  --jet: #2a2b29ff;
+  --offwhite: #f9f9f9;
+  --offgray: rgba(128, 128, 128, 0.32);
+  --french-gray: #d0d3d9;
+  --onyx: #363942ff;
+  --gold: #ef9943;
+  --darkTitle: #494f5c;
 }
 
 * {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    font-family: "Sofia Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Sofia Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 h1 {
-    color: lightgray;
+  color: lightgray;
 }
 
 .humble-gold {
-    color: var(--gold);
+  color: var(--gold);
 }
 
 .humble-green {
-    color: var(--apple-green);
+  color: var(--apple-green);
 }
 
 .body {
-    width: 100%;
-    background-color: var(--raisin-black);
+  width: 100%;
+  background-color: var(--raisin-black);
 }
 
 .app-content {
-    /* width:80%; */
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
+  /* width:80%; */
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 .nav {
-    position: sticky;
-    background-color: var(--onyx);
-    color: white;
-    z-index: 300;
-    top: 0;
+  position: sticky;
+  background-color: var(--onyx);
+  color: white;
+  z-index: 300;
+  top: 0;
 }
 
 #banner {
-    background-image: url('https://arrogant-bundle.onrender.com/images/backgrounds/header.jpg');
-    background-position-x: 50%;
-    background-position-y: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 128px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 13px;
-    text-shadow: rgba(0, 0, 0, 0.65) 1px 1px 5px;
-    cursor: pointer;
-    text-decoration: none;
+  background-image: url('../../public/media/images/backgrounds/header.jpg');
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 128px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 13px;
+  text-shadow: rgba(0, 0, 0, 0.65) 1px 1px 5px;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .hero {
-    background-color: var(--raisin-black);
-    color: white;
-    height: 681px;
+  background-color: var(--raisin-black);
+  color: white;
+  height: 681px;
 }
 
 .hero-content {
-    max-width: 1140px;
-    margin: 0 auto;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 .product-hero {
-    margin: 2rem auto;
-    display: flex;
-    flex-flow: row wrap;
+  margin: 2rem auto;
+  display: flex;
+  flex-flow: row wrap;
 }
-
 
 /* -------------------------- PRODUCT DETAILS SECTION */
 .product-details {
-    color: var(--french-gray)
+  color: var(--french-gray);
 }
 
 .product-details-content {
-    max-width: 1140px;
-    margin: 0 auto;
-    display: flex;
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
 }
 
-.product-details-content>div>* {
-    padding: 25px;
+.product-details-content > div > * {
+  padding: 25px;
 }
 
 .product-details-details {
-    background-color: rgba(0, 0, 0, 0);
-    box-sizing: border-box;
-    color: rgb(255, 255, 255);
-    cursor: auto;
-    display: inline;
-    font-family: "Sofia Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    height: auto;
-    line-height: 21.6px;
-    max-height: 1000000px;
-    outline-color: rgb(255, 255, 255);
-    outline-style: none;
-    outline-width: 0px;
-    width: auto;
-    -webkit-font-smoothing: antialiased;
-    text-decoration: none;
+  background-color: rgba(0, 0, 0, 0);
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  cursor: auto;
+  display: inline;
+  font-family: 'Sofia Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  height: auto;
+  line-height: 21.6px;
+  max-height: 1000000px;
+  outline-color: rgb(255, 255, 255);
+  outline-style: none;
+  outline-width: 0px;
+  width: auto;
+  -webkit-font-smoothing: antialiased;
+  text-decoration: none;
 }
 
 .product-details-details:hover {
-    text-decoration: underline;
-    text-decoration-line: underline;
+  text-decoration: underline;
+  text-decoration-line: underline;
 }
 
 .product-details-rating {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .product-details-rating-reason {
-    box-sizing: border-box;
-    color: rgb(161, 167, 178);
-    display: list-item;
-    font-family: "Arial Narrow", Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    height: 19px;
-    line-height: 19.200001px;
-    list-style-image: none;
-    list-style-position: outside;
-    list-style-type: none;
-    max-height: 1000000px;
-    text-align: left;
-    width: 136.875px;
-    -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  color: rgb(161, 167, 178);
+  display: list-item;
+  font-family: 'Arial Narrow', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  height: 19px;
+  line-height: 19.200001px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  max-height: 1000000px;
+  text-align: left;
+  width: 136.875px;
+  -webkit-font-smoothing: antialiased;
 }
 
 .product-details-background {
-    background-color: rgb(27, 30, 27);
+  background-color: rgb(27, 30, 27);
 }
 
 .product-description {
-    background-color: var(--french-gray);
-    padding: 35px;
-    line-height: 1.35;
+  background-color: var(--french-gray);
+  padding: 35px;
+  line-height: 1.35;
 }
 
 .product-description p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 .product-description-content {
-    max-width: 1140px;
-    margin: 0 auto;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 
 .column-view.full {
-    flex-basis: 100%;
-    max-width: 100%;
-    margin: 6px 0;
+  flex-basis: 100%;
+  max-width: 100%;
+  margin: 6px 0;
 }
 
 .js-admin-edit {
-    padding-bottom: 15px;
+  padding-bottom: 15px;
 }
 .product-description strong {
-    font-style: bold;
+  font-style: bold;
 }
 
 .product-description em {
-    font-style: italic;
+  font-style: italic;
 }
 
 .property-title {
-    font-weight: bold;
-    margin-top: 0;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    white-space: normal;
-    font-size: 16px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  white-space: normal;
+  font-size: 16px;
 }
 
 .property-view {
-    position: relative;
+  position: relative;
 }
 
 .property-view.expandable.collapsed .property-content {
-    max-height: 150px;
-
+  max-height: 150px;
 }
 
 .property-content {
-    overflow: hidden;
-    position: relative;
-    margin-bottom: 20px;
-    
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
 }
 
 .property-content.collapsed {
-    mask-image: linear-gradient(to top, transparent 0%, var(--french-gray) 20%);
+  mask-image: linear-gradient(to top, transparent 0%, var(--french-gray) 20%);
 }
 
 .toggle-div.collapsed {
-    position: absolute;
-    background-image: linear-gradient(to bottom, transparent, var(--french-gray) 90%);
-    mask-image: linear-gradient(to bottom, transparent 0%, var(--french-gray) 20%);
+  position: absolute;
+  background-image: linear-gradient(
+    to bottom,
+    transparent,
+    var(--french-gray) 90%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    var(--french-gray) 20%
+  );
 }
 .toggle-div {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: var(--french-gray);
-    z-index: 1;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--french-gray);
+  z-index: 1;
 }
 
 .property-view.expandable.collapsed .read-more-toggle {
-    display: inline;
+  display: inline;
 }
 
 .property-view.expandable .read-more-toggle {
-    display: none;
+  display: none;
 }
 
 .property-view.expandable.collapsed .show-less-toggle {
-    display: none;
+  display: none;
 }
 
 .property-view.expandable .show-less-toggle {
-    display: inline;
+  display: inline;
 }
 
 .property-view.expandable .show-less-toggle .arrowflipped {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
-.read-more-toggle, .show-less-toggle {
-    font-weight: bold;
-    text-decoration: none;
+.read-more-toggle,
+.show-less-toggle {
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .critical-reception-background {
-    background-color: rgb(27, 30, 27);
+  background-color: rgb(27, 30, 27);
 }
 
 .critical-reception {
-    max-width: 1140px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    color: rgb(73, 79, 92);
-    display: block;
-    font-family: "Sofia Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    height: 486px;
-    line-height: 21.6px;
-    max-height: 1000000px;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    padding-bottom: 35px;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 35px;
-    width: 1754px;
-    -webkit-font-smoothing: antialiased;
+  max-width: 1140px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  color: rgb(73, 79, 92);
+  display: block;
+  font-family: 'Sofia Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  height: 486px;
+  line-height: 21.6px;
+  max-height: 1000000px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding-bottom: 35px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 35px;
+  width: 1754px;
+  -webkit-font-smoothing: antialiased;
 }
 
-#pop-carousel-section{
-    background-color: var(--onyx);
-    width:100%;
-    padding: 35px 0;
+#pop-carousel-section {
+  background-color: var(--onyx);
+  width: 100%;
+  padding: 35px 0;
 }
 
 .critical-reception-heading {
-    box-sizing: border-box;
-    color: rgb(161, 167, 178);
-    display: block;
-    font-family: "Sofia Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    height: 21px;
-    line-height: 21.6px;
-    margin-block-end: 10px;
-    margin-block-start: 0px;
-    margin-bottom: 10px;
-    margin-inline-end: 0px;
-    margin-inline-start: 0px;
-    margin-top: 0px;
-    max-height: 1000000px;
-    text-transform: uppercase;
-    white-space: normal;
-    width: 1140px;
-    -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  color: rgb(161, 167, 178);
+  display: block;
+  font-family: 'Sofia Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  height: 21px;
+  line-height: 21.6px;
+  margin-block-end: 10px;
+  margin-block-start: 0px;
+  margin-bottom: 10px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  margin-top: 0px;
+  max-height: 1000000px;
+  text-transform: uppercase;
+  white-space: normal;
+  width: 1140px;
+  -webkit-font-smoothing: antialiased;
 }
 
 .critical-reception-comment-container {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .critical-reception-stars-container {
-    display: flex;
+  display: flex;
 }
 
 .critical-reception-author-company-container {
-    display: flex;
-    padding-bottom: 10px;
+  display: flex;
+  padding-bottom: 10px;
 }
 
 .critical-reception-comment {
-    box-sizing: border-box;
-    color: rgb(255, 255, 255);
-    display: inline;
-    font-family: "Sofia Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    height: auto;
-    line-height: 21.6px;
-    max-height: 1000000px;
-    text-align: left;
-    width: 33%;
-    -webkit-font-smoothing: antialiased;
-    text-align: left;
-    padding-left: 15px;
-    padding-right: 15px;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  display: inline;
+  font-family: 'Sofia Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  height: auto;
+  line-height: 21.6px;
+  max-height: 1000000px;
+  text-align: left;
+  width: 33%;
+  -webkit-font-smoothing: antialiased;
+  text-align: left;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .critical-reception-stars {
-    box-sizing: border-box;
-    color: rgb(255, 255, 255);
-    display: block;
-    font-family: "Sofia Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    height: 24px;
-    line-height: 24.299999px;
-    max-height: 1000000px;
-    text-align: center;
-    width: 33%;
-    -webkit-font-smoothing: antialiased;
-    text-align: center;
-    margin-top: 5px;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  display: block;
+  font-family: 'Sofia Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  height: 24px;
+  line-height: 24.299999px;
+  max-height: 1000000px;
+  text-align: center;
+  width: 33%;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  margin-top: 5px;
 }
 
 .critical-reception-writer {
-    width: 33%;
+  width: 33%;
 }
 
 .critical-reception-author {
-    box-sizing: border-box;
-    color: rgb(255, 255, 255);
-    cursor: auto;
-    display: inline;
-    font-family: "Sofia Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    height: auto;
-    line-height: 21.6px;
-    max-height: 1000000px;
-    text-align: center;
-    width: auto;
-    -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  cursor: auto;
+  display: inline;
+  font-family: 'Sofia Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  height: auto;
+  line-height: 21.6px;
+  max-height: 1000000px;
+  text-align: center;
+  width: auto;
+  -webkit-font-smoothing: antialiased;
 }
 
 .critical-reception-company {
-    box-sizing: border-box;
-    color: rgb(161, 167, 178);
-    cursor: auto;
-    display: inline;
-    font-family: "Sofia Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    font-style: italic;
-    height: auto;
-    line-height: 21.6px;
-    max-height: 1000000px;
-    text-align: center;
-    width: auto;
-    -webkit-font-smoothing: antialiased;
-    padding-left: 3px;
+  box-sizing: border-box;
+  color: rgb(161, 167, 178);
+  cursor: auto;
+  display: inline;
+  font-family: 'Sofia Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  height: auto;
+  line-height: 21.6px;
+  max-height: 1000000px;
+  text-align: center;
+  width: auto;
+  -webkit-font-smoothing: antialiased;
+  padding-left: 3px;
 }
 
 .critical-reception-writer {
-    text-align: center;
+  text-align: center;
 }
 
-.critical-reception>p {
-    box-sizing: border-box;
-    color: rgb(255, 255, 255);
-    display: block;
-    font-family: "Sofia Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    font-style: italic;
-    height: 36px;
-    line-height: 21.6px;
-    max-height: 1000000px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 5px;
-    padding-top: 10px;
-    text-align: center;
-    width: 1140px;
-    -webkit-font-smoothing: antialiased;
+.critical-reception > p {
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  display: block;
+  font-family: 'Sofia Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  height: 36px;
+  line-height: 21.6px;
+  max-height: 1000000px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 5px;
+  padding-top: 10px;
+  text-align: center;
+  width: 1140px;
+  -webkit-font-smoothing: antialiased;
 }
 
-.critical-reception>p>a {
-    background-color: rgba(0, 0, 0, 0);
-    box-sizing: border-box;
-    color: rgb(161, 167, 178);
-    cursor: auto;
-    display: inline;
-    font-family: "Sofia Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    font-style: italic;
-    height: auto;
-    line-height: 21.6px;
-    max-height: 1000000px;
-    outline-style: none;
-    outline-width: 0px;
-    text-align: center;
-    text-decoration: none;
-    text-decoration-line: none;
-    width: auto;
-    -webkit-font-smoothing: antialiased;
+.critical-reception > p > a {
+  background-color: rgba(0, 0, 0, 0);
+  box-sizing: border-box;
+  color: rgb(161, 167, 178);
+  cursor: auto;
+  display: inline;
+  font-family: 'Sofia Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  height: auto;
+  line-height: 21.6px;
+  max-height: 1000000px;
+  outline-style: none;
+  outline-width: 0px;
+  text-align: center;
+  text-decoration: none;
+  text-decoration-line: none;
+  width: auto;
+  -webkit-font-smoothing: antialiased;
 }
 
-.critical-reception>p>a:hover {
-    color: rgb(255, 255, 255);
+.critical-reception > p > a:hover {
+  color: rgb(255, 255, 255);
 }
 
 .popular-carousel {
-    background-color: var(--onyx);
-    width: 100%;
+  background-color: var(--onyx);
+  width: 100%;
 }
 
 .popCarousel-contents {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .system-req-background {
-    background-color: rgb(27, 30, 27);
+  background-color: rgb(27, 30, 27);
 }
 
 .system-req {
-    max-width: 1140px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    color: rgb(161, 167, 178);
-    display: block;
-    font-family: "Sofia Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 21.6px;
-    margin-bottom: 20px;
-    max-height: 1000000px;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    position: relative;
-    width: 1140px;
-    -webkit-font-smoothing: antialiased;
-    font-weight: bold;
-    padding-top: 35px;
-    padding-bottom: 35px;
+  max-width: 1140px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  color: rgb(161, 167, 178);
+  display: block;
+  font-family: 'Sofia Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 21.6px;
+  margin-bottom: 20px;
+  max-height: 1000000px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+  width: 1140px;
+  -webkit-font-smoothing: antialiased;
+  font-weight: bold;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
-.system-req>h2 {
-    box-sizing: border-box;
-    color: rgb(161, 167, 178);
-    display: block;
-    font-family: "Sofia Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    height: 21px;
-    line-height: 21.6px;
-    margin-block-end: 10px;
-    margin-block-start: 0px;
-    margin-bottom: 10px;
-    margin-inline-end: 0px;
-    margin-inline-start: 0px;
-    margin-top: 0px;
-    max-height: 1000000px;
-    text-transform: uppercase;
-    white-space: normal;
-    width: 1140px;
-    -webkit-font-smoothing: antialiased;
+.system-req > h2 {
+  box-sizing: border-box;
+  color: rgb(161, 167, 178);
+  display: block;
+  font-family: 'Sofia Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  height: 21px;
+  line-height: 21.6px;
+  margin-block-end: 10px;
+  margin-block-start: 0px;
+  margin-bottom: 10px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  margin-top: 0px;
+  max-height: 1000000px;
+  text-transform: uppercase;
+  white-space: normal;
+  width: 1140px;
+  -webkit-font-smoothing: antialiased;
 }
 
 .product-details-title {
-    box-sizing: border-box;
-    color: rgb(161, 167, 178);
-    display: block;
-    font-family: "Sofia Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    height: 21px;
-    line-height: 21.6px;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
-    margin-bottom: 0px;
-    margin-inline-end: 0px;
-    margin-inline-start: 0px;
-    margin-top: 0px;
-    max-height: 1000000px;
-    text-transform: uppercase;
-    white-space: normal;
-    width: 273.75px;
-
+  box-sizing: border-box;
+  color: rgb(161, 167, 178);
+  display: block;
+  font-family: 'Sofia Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  height: 21px;
+  line-height: 21.6px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-bottom: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  margin-top: 0px;
+  max-height: 1000000px;
+  text-transform: uppercase;
+  white-space: normal;
+  width: 273.75px;
 }
 
 .footer {
-    background-color: var(--onyx);
-    color: var(--french-gray);
-    font-size: .875rem;
-    padding-bottom: 3.125rem;
-    display: block;
-    box-sizing: border-box;
+  background-color: var(--onyx);
+  color: var(--french-gray);
+  font-size: 0.875rem;
+  padding-bottom: 3.125rem;
+  display: block;
+  box-sizing: border-box;
 }
 
 .footer-contents {
-    max-width: 93.75rem;
-    margin: 0 auto;
+  max-width: 93.75rem;
+  margin: 0 auto;
 }
-
