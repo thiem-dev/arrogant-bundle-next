@@ -25,7 +25,7 @@ export default function Home() {
       if (response.ok) {
         const productData = await response.json(); //Extract JSON from Nextjs response - doesn't automatically become available like other apis
         setProductData(productData);
-        console.log(productData);
+        console.log('productData from api call:', productData);
       }
       setIsLoading(false);
     };
