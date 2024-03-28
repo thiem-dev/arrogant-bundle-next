@@ -1,6 +1,6 @@
 # # Project: PosiTest [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
-![App Screenshot](https://github.com/The-Placeholder/PosiTest/blob/dev/appPics/bo-testingsuite.jpg?raw=true)
+![App Screenshot](https://github.com/thiem-dev/arrogant-bundle-next/blob/main/public/pageScreenCaps/arrogant1.jpg)
 
 ## Getting Started
 
