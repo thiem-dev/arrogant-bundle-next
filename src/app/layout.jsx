@@ -1,5 +1,6 @@
 import { Inter } from 'next/font/google';
 import './globals.css';
+import '../css/main.css';
 import ShoppingCartProvider from './components/ShoppingCartContext/ShoppingCartProvider.jsx';
 
 const inter = Inter({ subsets: ['latin'] });

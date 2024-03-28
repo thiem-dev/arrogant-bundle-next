@@ -56,7 +56,7 @@ h1 {
 }
 
 #banner {
-  background-image: url('../../public/media/images/backgrounds/header.jpg');
+  background-image: url('/media/images/backgrounds/header.jpg');
   background-position-x: 50%;
   background-position-y: 50%;
   background-repeat: no-repeat;

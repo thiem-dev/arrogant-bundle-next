@@ -6,10 +6,9 @@ import '../../../css/hero.css';
 import ShoppingCartContext from '../ShoppingCartContext/ShoppingCartContext.mjs';
 
 import Image from 'next/image';
+const nextMedia = `/media`;
 
 const Hero = ({ productData }) => {
-  const nextMedia = `/media`;
-
   const { cartItem, handleCartItem, addTo, wishlistCount } =
     useContext(ShoppingCartContext);
 
@@ -43,10 +42,11 @@ const Hero = ({ productData }) => {
           <div id="product-hero">
             <div className="main-img">
               <Image
-                src={`${nextMedia}${images[currentIndex]}`}
+                src={nextMedia + images[currentIndex]}
                 alt="mario1"
-                width={500} //placeholder height n width
-                height={300}
+                width={750} //placeholder height n width
+                height={425}
+                priority={true}
                 className="main-carousel-img"
                 ref={imageRef}
               />

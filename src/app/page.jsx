@@ -15,11 +15,6 @@ import SystemReq from './components/AppContent/SystemReq';
 import Footer from './components/Footer';
 import ShoppingCartContext from './components/ShoppingCartContext/ShoppingCartContext.mjs';
 import { useState, useEffect, useContext } from 'react';
-import product from './api/product/product-data-hardcode';
-
-// import Bundle from './Bundle.jsx';
-// import Store from './Store.jsx';
-// import About from './About.jsx';
 
 export default function Home() {
   const { cartDisplay, bundleDisplay } = useContext(ShoppingCartContext);
@@ -33,7 +28,7 @@ export default function Home() {
       if (response.ok) {
         const productData = await response.json(); //Extract JSON from Nextjs response - doesn't automatically become available like other apis
         setProductData(productData);
-        console.log(product);
+        console.log(productData);
       }
       setIsLoading(false);
     };
