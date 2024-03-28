@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
+
+:root{
+    /* CSS HEX Humble Pallette
+    - use via: cssProperty: var(--jet)
+    */
+    --apple-green: #8EA940ff;
+    --raisin-black: #252830ff;
+    --eerie-black: #191B19ff;
+    --jet: #2A2B29ff;
+    --french-gray: #D0D3D9ff;
+    --onyx: #363942ff;
+    --gold: #ef9943;
+}
+
+.nav a{
+    text-decoration: none;
+    color:white;
+}
+
+.nav-links {
+    height:68px;
+    z-index:200;
+    display: flex;
+    flex-flow:row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #252830ff;
+    border-top: none;
+}
+
+#humble-links {
+    display: flex;
+    flex-direction: row;
+    margin-left: 12em;
+    justify-content: center;
+    align-items: center;
+}
+#humble-links > h1 {
+    cursor: pointer;
+    font-family: 'Galada';
+    color: white;
+}
+#humble-links > a {
+    margin-left: 20px;
+    color: #D0D3D9ff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: color .5s;
+    font-weight: bold;
+    text-decoration: none;
+}
+#humble-links > a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+#search-signUp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 700px;
+    height: 100%;
+    margin-right: 10em;
+}
+#searchInput {
+    background-color: #282c34;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    border-radius: 3px;
+    height: 70%;
+    width: 54%;
+    padding: 12px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #D0D3D9ff;
+}
+#searchInput > input {
+    background-color: transparent;
+    border: none;
+    height: 40px;
+    width: 330px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+#searchInput > input::placeholder {
+    color: #D0D3D9ff;
+    font-weight: bold;
+    font-size: 17px;
+    font-weight: bold;
+}
+#search-signUp > a {
+    font-size: 15px;
+    color: #D0D3D9ff;
+    transition: .5s;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+#search-signUp > a:hover {
+    color: white;
+    text-decoration: underline;
+}
+/*=========================*/
+.charity-nav {
+    height:55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: none;
+}
+
+#charity-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12em;
+}
+#charity-links > a {
+    font-size: 15px;
+    margin-left: 30px;
+    color: #D0D3D9ff;
+    transition: .5s;
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: bold;
+}
+#charity-links > a:hover {
+    color: white;
+}
+
+#wallet-cart {
+    height: 40px;
+    width: 200px;
+    color: black;
+    margin-right: 12em;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#wallet-cart > h3 {
+    color: #D0D3D9ff;
+    font-size: 15px;
+    margin-left: -10px;
+}
+
+.nav-icons {
+    color: #D0D3D9ff;
+    font-size: 20px;
+    transition: .5s;
+    cursor: pointer;
+}
+#wallet-icon:hover {
+    color: white;
+}
+
+#cart-icon,
+#star-icon {
+    color: white;
+}
+
+/* POP UP DIVS====================================== */
+
+.bundle-drop-ctn{
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 70px;
+    margin-left: 25px;
+    color: #D0D3D9ff;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#Bundle-div{
+    position:absolute;
+    display: flex;
+    flex-flow: column wrap;
+    gap:1rem;
+    top: 55px;
+    left:.3rem;
+    border: none;
+    background-color: var(--onyx);
+    box-shadow: 0px -.5px 15px var(--jet);
+    justify-content: space-around;
+    font-size: 11px;
+    overflow:hidden;
+    width:0px;
+    height:0px;
+    padding:0rem;
+}
+
+.bundle-drop-ctn > a{
+    color: #D0D3D9ff;
+}
+
+.bundle-drop-ctn:hover > a{
+    color: white;
+    text-decoration: underline;
+    transition: color .5s;
+}
+
+.bundle-drop-ctn:hover #Bundle-div{
+    width:150px;
+    height:200px;
+    padding:2.5rem;
+    overflow:visible;
+}
+
+#Bundle-div > h2:hover {
+    text-decoration: underline;
+}
+
+/* STORE DROPDOWN STYLING======================== */
+.store-drop-ctn {
+    width: 70px;
+    position: relative;
+    padding:1.5rem;
+    margin-left: 5px;
+    color: #D0D3D9ff;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+} 
+
+#Store-div {
+    position:absolute;
+    display: flex;
+    flex-direction: row;
+    gap:2rem;
+    top: 55px;
+    left:1.5rem;
+    border: none;
+    background-color: var(--onyx);
+    box-shadow: 0px -.5px 15px var(--jet);
+    justify-content: space-around;
+    font-size: 12px;
+    overflow:hidden;
+    width:0px;
+    height:0px;
+    padding:0rem;
+    text-align: left;
+}
+
+.store-div-h1 {
+    color: white;
+    font-size: 17px;
+    margin-bottom: 2em;
+    font-weight: bolder;
+    cursor: auto;
+}
+
+.store-div-list > h2 {
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.store-div-list > h2:hover {
+    text-decoration: underline;
+}
+
+.store-drop-ctn > a {
+    color: #D0D3D9ff;
+}
+
+.store-drop-ctn:hover > a {
+    transition: color .5s;
+    text-decoration: underline;
+    color: white;
+}
+
+.store-drop-ctn:hover #Store-div {
+    width:840px;
+    height:auto;
+    padding:2.5rem;
+    overflow:visible;
+}
+
+/* ABOUT DROPDOWN STYLING======================== */
+.about-drop-ctn {
+    width: 70px;
+    position: relative;
+    padding:1.5rem;
+    color: #D0D3D9ff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: color .5s;
+    font-weight: bold;
+    text-decoration: none;
+} 
+
+#About-div {
+    position:absolute;
+    display: flex;
+    flex-flow: column wrap;
+    gap:2rem;
+    top: 55px;
+    left:1.5rem;
+    border: none;
+    background-color: var(--onyx);
+    box-shadow: 0px -.5px 15px var(--jet);
+    justify-content: space-around;
+    overflow:hidden;
+    width:0px;
+    height:0px;
+}
+
+#About-div > h1 {
+    font-size: 17px;
+    margin-bottom: -10px;
+    color: white;
+}
+
+#About-div > h1:hover {
+    text-decoration: underline;
+}
+
+.about-drop-ctn:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.about-drop-ctn:hover #About-div {
+    width:auto;
+    height:auto;
+    padding:2.5rem;
+    overflow:visible;
+}
+
+
+
+.pop-ups {
+    color: white;
+    
+}

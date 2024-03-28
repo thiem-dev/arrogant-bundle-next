@@ -1,0 +1,297 @@
+/* --------------------------------------------------FOOTER SECTION */
+
+.brand h1 {
+  font-family: 'Galada';
+}
+
+.footer .max-width-wrapper {
+    margin: auto;
+    max-width: 93.75rem;
+    padding: 0 1.875rem;
+}
+
+.footer .footer-content {
+    display: grid;
+    grid-template-columns: repeat(8, minmax(10px, auto));
+    grid-template-rows: repeat(6, minmax(10px, auto));
+    width: 100%;
+}
+
+.footer .footer-content .brand {
+    grid-column: 1/3;
+    grid-row: 3/3;
+    padding-top: 0;
+    height: 1rem;
+}
+
+.footer .footer-content .refer-container {
+    grid-column: 1/3;
+    grid-row: 2/6;
+    padding-top: 3em;
+    width: 12rem;
+    margin-right: 6rem;
+}
+
+.refer-message {
+    margin-bottom: 1.715em;
+    margin-right: 1em;
+}
+
+
+.footer-content{
+    max-width: 93.75rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.footer .footer-content .footer-links {
+    display: flex;
+    flex-direction: row;
+    grid-column: 3/7;
+    grid-row: 1/6;
+    margin-left: 0;
+}
+
+.footer .footer-content .footer-links .footer-links-info {
+    margin-top: 1rem;
+}
+
+.footer h2 {
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.footer .footer-content .footer-links h2 {
+    font-size: .875rem;
+    margin: 0;
+}
+
+.footer .footer-content .footer-links .info-links-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .footer-content .footer-links .trending-games-list {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.footer .footer-content .footer-links .info-links-list li:nth-child(odd), .footer .footer-content .footer-links .trending-games-list li:nth-child(odd) {
+    padding-left: 0;
+}
+
+.footer .footer-content .footer-links .info-links-list li:nth-child(1), .footer .footer-content .footer-links .trending-games-list li:nth-child(1) {
+    padding-top: 1.667em;
+}
+
+.footer .footer-content .footer-links .trending-games-list li:nth-last-child(-n+2) {
+    padding-bottom: 0;
+}
+
+.footer .footer-content .footer-links .info-links-list li:nth-child(2) {
+    padding-left: 0;
+    padding-top: .75em;
+}
+
+.footer .footer-content .footer-links .trending-games-list li:nth-child(2) {
+    padding-top: 1.667em;
+}
+
+.footer .footer-content .footer-links .footer-links-trending {
+    margin-top: 1rem;
+}
+
+.footer .footer-content .social-and-language-container {
+    grid-column: 7/9;
+    grid-row: 3/7;
+    margin-top: 0;
+    text-align: right;
+}
+
+.links, .refer-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.links:hover {
+    color: white;
+}
+
+.info-links-list, .trending-games-list, .legal-links-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.legal-links-list {
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.refer-link {
+    color: var(--gold);
+}
+
+.js-language-button {
+    width: 20.375rem;
+    background-color: var(--eerie-black);
+    color: white;
+    padding: 5px;
+    height: 2rem;
+    max-width: 100%;
+    border: 1px solid ;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .js-language-container {
+    display: flex;
+    font-size: inherit;
+    text-transform: capitalize;
+  }
+  
+  .language-dropdown-container {
+    margin: 0 0 2em;
+    justify-content: right;
+    display: inline-block;
+    position: relative;
+  }
+
+  .language-choice-container {
+    background-color: gray;
+    max-width: 100%;
+    border-radius: 4px;
+    border: 2px solid white;
+  }
+  
+  .language-container {
+    margin-right: 0;
+    margin-top: 0.625em;
+    position: absolute;
+    overflow: hidden;
+    z-index: 999;
+    max-height: 0; /* Set initial max-height to 0 */
+    transition: all 1s ease; /* Include transition in the default state */
+  }
+  
+  .language-container.open {
+    max-height: 200px; /* Set the desired max-height when open */
+  }
+
+  .language-container button {
+    padding: 0.313rem 1rem;
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-size: inherit;
+    border: 0px;
+    cursor: pointer;
+    background-color: inherit;
+    width: 20.375rem;;
+    text-align: left;
+  }
+  
+  .language-container button:hover {background-color: var(--onyx);}
+
+  
+.footer .footer-content .footer-links .info-links-list li,  .footer .footer-content .footer-links .trending-games-list li{
+    flex-basis: 44%;
+    padding: .75em 1.5em;
+    white-space: nowrap;
+  }
+
+  .footer ul {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+  }
+
+  .footer li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+  }
+
+  .footer .footer-content .social-and-language-container .socialcontainer {
+    margin-bottom: 2.25em;
+}
+
+.footer .footer-content .social-and-language-container .legal-links {
+    justify-content: flex-end;
+    flex-direction: column;
+    display: flex;
+    font-size: .75rem;
+    margin-top: 1.5rem;
+}
+
+.footer .footer-content .social-and-language-container .legal-links .legal-links-list li {
+    display: inline-block;
+    transform: translate(0%, -50%);
+}
+
+.logo {
+    color: var(--onyx);
+    background-color: gray;
+    font-size: 1.75rem;
+    padding: .35rem;
+    padding-bottom: .1rem;
+    border-radius: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: .2rem;
+}
+
+.logo:hover {
+    background-color: lightgray;
+    color: var(--onyx);
+}
+
+.dot {
+    font-size: 1.85em;
+    margin-top: 15px;
+}
+
+.globe-div {
+    padding-right: 0.4rem;
+  }
+  
+  .globe,
+  .globe-flip {
+    transform: rotate(0deg);
+    transition: transform .4s ease;
+  }
+  
+  .globe-flip {
+    transform: rotate(180deg);
+  }
+  
+  .arrow-div {
+    display: flex;
+    text-align: right;
+  }
+  
+  .arrow,
+  .arrow-flip {
+    transform: rotate(0deg);
+    transition: transform .4s ease;
+  }
+  
+  .arrow-flip {
+    transform: rotate(180deg);
+  }
+
+.add {
+    transform: translate(0%, 25%);
+}

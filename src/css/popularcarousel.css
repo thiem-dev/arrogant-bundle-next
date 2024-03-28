@@ -1,0 +1,277 @@
+/* ------------------------------ POPULAR CAROUSEL SECTION  */
+.pop-nav-box{
+    position:relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pop-carousel-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow-x:hidden;
+}
+
+.popular-title{
+    font-size:.9rem;
+    color:var(--french-gray);
+    text-transform: uppercase;
+    width:100%;
+    font-weight:900;
+    white-space: normal;
+}
+
+.pop-carousel-wrapper{
+    display:flex;
+    width: 100%;
+    height:280px;
+    margin: 1rem auto;
+    flex-flow: row nowrap;
+    gap: 1.3rem;
+    transition: transform 0.5s ease;
+}
+
+.pop-nav-btn{
+    position: absolute;
+    top: 140px;
+    font-size: 2.2rem;
+    cursor: pointer;
+    z-index: 100;
+    color: lightslategray;
+    transition: color 0.5s linear; 
+}
+
+.pop-nav-hover:hover{
+    color: white;
+}
+
+.unscrollable{
+    opacity:.2;
+}
+
+div.pop-next {
+  transform: translateX(55px);
+  right: 10px;
+}
+
+div.pop-prev {
+  transform: translateX(-55px);
+  left: 10px;
+}
+
+/* -------------------------------- POPULAR CAROUSEL CARDS */
+
+.carouselCard{
+    width: 275px;
+    height: 257px;
+    display:flex;
+    flex-flow:column;
+}
+
+.carouselCard a{
+    display:flex;
+    flex-flow:column;
+    text-decoration: none;
+}
+
+.card-img{
+    object-fit: contain;
+}
+
+.title-box{
+    height:4rem;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    color: var(--darkTitle);
+    background-color: #fff;
+    font-weight: bolder;
+    padding: .5rem .8rem;
+    text-transform: uppercase;
+}
+
+.card-title{
+    font-size:.9rem;
+    margin-right: .2rem;
+    width:175px;
+    text-wrap: wrap;
+    font-weight: 800;
+}
+
+.starholder{
+    width:1.1rem;
+    font-size:1.1rem;
+    position:relative
+}
+.star{
+    position:absolute;
+    top:0;
+    left:0;
+}
+.starOne{
+    color: var(--offgray);
+}
+
+.starTwo {
+    color: var(--french-gray);
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+.starTwo:hover {
+    color: var(--gold);
+    opacity: 1; 
+    z-index:100;
+}
+
+.card-footer{
+    display:flex;
+    flex-flow: row nowrap;
+    height: 100%;
+    min-height: 50px;
+    border-top:  1px solid #eee;
+    background-color: var(--offwhite);
+    gap:.5rem;
+}
+
+.card-systems-box{
+    width:auto;
+    display:flex;
+    flex-flow: row nowrap;
+    padding:.9rem;
+    gap:.2rem;
+}
+
+.verticalborder{
+    border-right: 1.8px solid rgba(81, 81, 81, 0.496);
+    height:17px
+}
+
+.card-system-platforms{
+    display:flex;
+    flex-flow:row nowrap;
+    gap:.2rem;
+    padding:.1rem;
+}
+
+.card-system-os{
+    display:flex;
+    flex-flow:row nowrap;
+    gap:.2rem;
+    padding:.1rem;
+}
+
+.card-price-ctn{
+    display:flex;
+    flex-flow: row nowrap;
+    /* justify-content: flex-end; */
+    align-items: center;
+    gap:.75rem;
+}
+
+.pop-price{
+    width:90px;
+    text-align: center;
+    margin-left: 4.5rem;
+    font-weight: 900;
+    text-rendering: optimizeLegibility;
+    color: var(--darkTitle);
+    font-size:.95rem;
+    padding:.25rem .9rem;
+    border-radius: .3rem;
+    border: 1px solid var(--darkTitle)
+}
+.pop-price>div{
+    display:flex;
+    flex-flow:row nowrap;
+    align-items:center;
+    gap:.25rem;
+}
+
+.pop-discount-ctn{
+    font-weight: 900;
+    text-rendering: optimizeLegibility;
+    text-shadow: 0 3px 0 rgba(0,0,0,0.2);
+    background-image: radial-gradient(circle at 50% 0, #61862d, #537326);
+    box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.15);
+    color: #e6ff99;
+    font-size:.95rem;
+    padding:.25rem .6rem;
+    border-radius: .3rem;
+}
+
+.pop-price-deal{
+    font-weight: 900;
+    text-rendering: optimizeLegibility;
+    color: var(--darkTitle);
+    font-size:.95rem;
+    padding:.25rem .9rem;
+    border-radius: .3rem;
+    border: 1px solid var(--darkTitle)
+}
+
+.carouselCard:hover .pop-hover{
+    background-color: var(--apple-green);
+    color:white;
+    border: none;
+}
+
+/* ------------------------- TOOLTIP SECTION */
+
+#discount-tip{
+    font-weight: 800;
+    padding:.4rem 1rem;
+    border-radius: .3rem;
+    display:flex;
+    flex-flow:column nowrap;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    opacity:1;
+    width: 192px;
+    height:auto;
+    font-size:.72rem;
+}
+
+.tip-header{
+    display:flex;
+    text-transform: uppercase;
+    color:var(--offwhite);
+    background-color: var(--onyx);
+    padding:.6rem .8rem;
+    margin: auto;
+    width:100%;
+    justify-content: center;
+}
+
+.tip-content{
+    display:flex;
+    flex-flow:row wrap;
+    padding:.6rem .8rem;
+    /* gap:.5rem; */
+    justify-content: left;
+    color:lightgray;
+}
+
+.arrow-discount{
+    color: var(--apple-green);
+    font-weight: bolder;
+    font-size:.8rem;
+}
+
+.store-discount-percent{
+    width:100%;
+}
+
+.deal{
+    color: var(--apple-green)
+}
+
+.store-discount-amount{
+    display: flex;
+    gap:.3rem;
+}
+
+.old-price{
+    text-decoration: line-through;
+    color:gray;
+}

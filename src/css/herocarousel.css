@@ -1,0 +1,54 @@
+/* ----------------------- HERO CAROUSEL SECTION */
+.carousel-box {
+    position: relative;
+  }
+  
+  .carousel-container {
+    position: relative;
+    width: 1140px;
+    overflow-x: hidden;
+  }
+  
+  .image-wrapper {
+    display: flex;
+    gap: 1rem;
+    height: 122px;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-image {
+    width: 220px;
+    height: auto;
+    box-sizing: border-box; /* Add this line */
+  }
+  
+  .active {
+    border: 6px solid #169fe3;
+  }
+  
+  .nav-button {
+    position: absolute;
+    top: 35%;
+    font-size: 2.2rem;
+    cursor: pointer;
+    z-index: 100;
+    color: lightslategray;
+    transition: color 0.5s linear; 
+  }
+
+  .nav-button:hover {
+    color: white;
+  }
+  
+  div.next {
+    transform: translateX(55px);
+    right: 10px;
+  }
+  
+  div.prev {
+    transform: translateX(-55px);
+    left: 10px;
+  }
+  
+
+  

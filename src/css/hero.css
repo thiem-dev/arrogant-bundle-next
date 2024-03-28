@@ -1,0 +1,120 @@
+/*-------------------------- HERO SECTION */
+#hero{
+    background-color: var(--raisin-black);
+    color: white;
+    height: 735px;
+    min-width: 1140px;
+    margin: 0 auto;
+    margin-top:2.5rem;
+}
+
+#hero-content{
+    display:flex;
+    flex-flow: column nowrap;
+    width:100%;
+}
+
+#product-hero {
+    margin: 1rem auto;
+    display:flex;
+    flex-flow: row nowrap;
+    width:100%;
+    gap:1.8rem;
+}
+
+.product-title{
+    font-size:1.2rem;
+    color:var(--french-gray);
+    font-weight:bold;
+    width:100%;
+    text-transform: uppercase;
+}
+
+.main-img {
+    transition: transform 0.5s ease;
+}
+
+.main-carousel-img{
+    width:750px;
+    height: auto;
+}
+
+#mini-product{
+    width: 360px;
+    display:flex;
+    flex-flow: column nowrap;
+    background-color: var(--eerie-black);
+}
+
+.itemlogo{
+    width:90px;
+    height:30px;
+    object-fit: contain;
+}
+
+.thumbnail{
+    width:360px;
+    object-fit: contain;
+}
+
+.product-showcase{
+    padding: 0.2rem 1rem .8rem;
+    display: flex;
+    flex-flow: column wrap;
+    gap: .5rem;
+}
+
+.price{
+    display:flex;
+    justify-content: end;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.savings{
+    background-color: black;
+    font-size: .958rem;
+    /* letter-spacing: .05rem; */
+    padding: 1rem .75rem;
+    font-weight: bolder;
+    text-wrap: wrap;
+    text-align: center;
+}
+
+#checkoutBtn{
+    background-color: var(--apple-green);
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 1rem .5rem;
+    position: relative;
+    text-align: center;
+    text-rendering: optimizeLegibility;
+    text-shadow: 0 3px 0 rgba(0,0,0,0.2);
+    text-transform: uppercase;
+    transition: all 0.35s linear;
+}
+
+#checkoutBtn:hover{
+    background-color: rgba(143, 169, 64, 0.616);;
+}
+
+
+#wishListBtn{
+    background-color: var(--onyx);
+    color: darkgray;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem 0.40rem;
+    text-shadow: 0 3px 0 rgba(0,0,0,0.2);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.35s linear;
+    text-align: center;
+}
+
+#wishListBtn:hover{
+    color: var(--gold);
+}
