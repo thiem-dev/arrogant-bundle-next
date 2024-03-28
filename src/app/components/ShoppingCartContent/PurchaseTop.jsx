@@ -1,8 +1,8 @@
 import { IoCloseCircleSharp } from 'react-icons/io5';
 import { useState, useContext } from 'react';
 import ShoppingCartContext from '../ShoppingCartContext/ShoppingCartContext.mjs';
-// import switchCartLogo from '../../../../../public/media/images/platforms/switch-cart-logo.png'
 import switchCartLogo from '../../../../public/media/images/platforms/switch-cart-logo.png';
+import Image from 'next/image';
 
 const PurchaseTop = ({ productData, setProductData }) => {
   const { title, price } = productData;
@@ -19,7 +19,7 @@ const PurchaseTop = ({ productData, setProductData }) => {
       <div id="purchase-topA">
         <div id="sub-A">
           <IoCloseCircleSharp id="h1-x" onClick={emptyCart} />
-          <h1>{productData.title}</h1> <img src={switchCartLogo} />
+          <h1>{productData.title}</h1> <Image src={switchCartLogo} />
         </div>
         <h1>${productData.price}</h1>
       </div>

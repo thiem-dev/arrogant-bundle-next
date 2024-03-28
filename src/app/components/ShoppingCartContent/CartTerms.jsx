@@ -1,5 +1,6 @@
+import { FaGift } from 'react-icons/fa6';
 
-import { FaGift } from "react-icons/fa6";
+// prettier-ignore
 
 const CartTerms = () => {
   return (
@@ -12,4 +13,4 @@ const CartTerms = () => {
   )
 }
 
-export default CartTerms
+export default CartTerms;

@@ -1,14 +1,11 @@
+import PurchaseDiv from './PurchaseDiv';
 
-
-
-import PurchaseDiv from "./PurchaseDiv";
-
-const CartHolder = ({productData, setProductData}) => {
+const CartHolder = ({ productData, setProductData }) => {
   return (
-    <div id='cart-holder' >
+    <div id="cart-holder">
       <PurchaseDiv productData={productData} setProductData={setProductData} />
     </div>
-  )
-}
+  );
+};
 
-export default CartHolder
+export default CartHolder;
